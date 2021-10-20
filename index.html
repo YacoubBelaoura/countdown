@@ -80,23 +80,16 @@
 	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script>
-		var duration = moment.duration(moment([2021, 11, 26]).diff(moment()));
-
-		console.log(duration);
-		console.log(duration.days());
-		console.log(duration.hours());
-		console.log(duration.minutes());
-
 		$('.cd100').countdown100({
 			/*Set Endtime here*/
 			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: duration.asDays(),
-			endtimeHours: duration.hours(),
-			endtimeMinutes: duration.minutes(),
-			endtimeSeconds: duration.seconds(),
-			timeZone: ""
+			endtimeYear: 2021,
+			endtimeMonth: 12,
+			endtimeDate: 26,
+			endtimeHours: 00,
+			endtimeMinutes: 00,
+			endtimeSeconds: 00,
+			timeZone: "Africa/Algiers"
 			// ex:  timeZone: "America/New_York"
 			//go to " http://momentjs.com/timezone/ " to get timezone
 		});
